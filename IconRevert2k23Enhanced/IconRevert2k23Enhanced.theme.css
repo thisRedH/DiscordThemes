@@ -1,0 +1,26 @@
+/**
+* @name Icon Revert 2k23 Enhanced
+* @author thisRedH, dav154
+* @version 1.0.1
+* @description davart154's Icon Revert fixed to run with Plugins (on Vencord)
+* @source https://github.com/thisRedH/DiscordThemes
+*/
+
+@import url(https://raw.githubusercontent.com/davart154/Themes/main/Icon%20Revert%202023/2023%20Icon%20Revert.css);
+
+/*--- Reset some things from davart154 ---*/
+
+div.button__493d9 > .buttonWrapper_bd4bd7 > * {
+    display: block !important;
+}
+
+.buttonWrapper_bd4bd7 {
+    --current-color: currentColor;
+    background-color: unset;
+}
+
+/*--- Set the new things ---*/
+
+.button__493d9:not(.vc-chatbar-button .button__493d9) .buttonWrapper_bd4bd7 {
+    background-color: var(--current-color);
+}
