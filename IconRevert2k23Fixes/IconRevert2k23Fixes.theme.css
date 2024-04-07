@@ -1,12 +1,12 @@
 /**
-* @name Icon Revert 2023 Enhanced
+* @name Icon Revert 2023 Fixes
 * @author thisRedH
-* @version 1.0.2
+* @version 1.0.3
 * @description Fixes for davart154's Icon Revert to run with Plugins (on Vencord)
 * @source https://github.com/thisRedH/DiscordThemes
 */
 
-/*--- Reset some things from davart154's Icon Revert 2023---*/
+/*--- Reset some things from davart154's Icon Revert---*/
 
 div.button__493d9 > .buttonWrapper_bd4bd7 > * {
     display: block !important;

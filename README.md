@@ -3,10 +3,8 @@
 ## Icon Revert 2k23 Enhanced
 
 ```
-https://this.redh.dev/DiscordThemes/IconRevert2k23Enhanced/IconRevert2k23Enhanced.theme.css
+https://this.redh.dev/DiscordThemes/IconRevert2k23Fixes/IconRevert2k23Fixes.theme.css
 ```
 
-[davart154's Icon Revert](https://github.com/davart154/Icon-Revert-2023) fixed to run with Plugins (on Vencord).
-Still uses [davart154's Icon Revert](https://github.com/davart154/Icon-Revert-2023) in the backround.
-
-Disable the Original theme to make this work
+Fixes for [davart154's Icon Revert](https://github.com/davart154/Icon-Revert-2023) to run with Plugins (on Vencord).
+[davart154's Icon Revert](https://github.com/davart154/Icon-Revert-2023) has to be sitll enabled.
