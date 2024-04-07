@@ -1,6 +1,6 @@
 # DiscordThemes
 
-## Icon Revert 2k23 Enhanced
+## Icon Revert 2k23 Fixes
 
 ```
 https://this.redh.dev/DiscordThemes/IconRevert2k23Fixes/IconRevert2k23Fixes.theme.css
