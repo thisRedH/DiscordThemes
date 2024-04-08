@@ -1,5 +1,11 @@
 # DiscordThemes
 
+## No Nitro BS
+
+```
+https://this.redh.dev/DiscordThemes/NoNitroBS/nnbs.theme.css
+```
+
 ## Icon Revert 2k23 Fixes
 
 ```
