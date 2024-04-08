@@ -1,0 +1,21 @@
+/**
+* @name No Nitro BS
+* @author thisRedH
+* @version 1.0.1
+* @description Removes various Icons and Buttons, associated with Nitro
+* @source https://github.com/thisRedH/DiscordThemes
+*/
+
+:root {
+    --nnbs-mode: normal;
+/*
+    --nnbs-feature-dm: true;
+    --nnbs-feature-gift: true;
+    --nnbs-feature-badges: true;
+    --nnbs-feature-super-reaction-menu: true;
+    --nnbs-feature-super-reaction-color: true;
+    --nnbs-feature-terminator: true;
+*/
+}
+
+@import url(https://this.redh.dev/DiscordThemes/NoNitroBS/src/nnbs.css);

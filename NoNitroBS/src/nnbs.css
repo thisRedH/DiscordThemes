@@ -1,0 +1,82 @@
+
+/*--- Settings ---*/
+
+@container style(--nnbs-mode: lite) {
+    :root #app-mount {
+        container-name: theme-settings;
+        --nnbs-impl-feature-dm: var(--nnbs-feature-dm, true);
+        --nnbs-impl-feature-gift: var(--nnbs-feature-gift, true);
+    }
+}
+
+@container style(--nnbs-mode: normal) {
+    :root #app-mount {
+        container-name: theme-settings;
+        --nnbs-impl-feature-dm: var(--nnbs-feature-dm, true);
+        --nnbs-impl-feature-gift: var(--nnbs-feature-gift, true);
+        --nnbs-impl-feature-badges: var(--nnbs-feature-badges, true);
+        --nnbs-impl-feature-super-reaction-menu: var(--nnbs-feature-super-reaction-menu, true);
+    }
+}
+
+@container style(--nnbs-mode: extreme) {
+    :root #app-mount {
+        container-name: theme-settings;
+        --nnbs-impl-feature-dm: var(--nnbs-feature-dm, true);
+        --nnbs-impl-feature-gift: var(--nnbs-feature-gift, true);
+        --nnbs-impl-feature-badges: var(--nnbs-feature-badges, true);
+        --nnbs-impl-feature-super-reaction-menu: var(--nnbs-feature-super-reaction-menu, true);
+        --nnbs-impl-feature-super-reaction-color: var(--nnbs-feature-super-reaction-color, true);
+        --nnbs-impl-feature-terminator: var(--nnbs-feature-terminator, true);
+    }
+}
+
+/*--- Implementation ---*/
+
+@container theme-settings style(--nnbs-impl-feature-dm: true) {
+    /* Nitro in DMs */ [href="/store"],
+    /* Shop in DMs */  [href='/shop'] {
+        display: none !important;
+    }
+}
+
+@container theme-settings style(--nnbs-impl-feature-gift: true) {
+    /* Gift button */ .buttons__7ecff > button:last-of-type,
+    /* Gift button (english fallback) */ button[aria-label="Send a gift"] {
+      display: none !important;
+    }
+}
+
+@container theme-settings style(--nnbs-impl-feature-badges: true) {
+    /* Badges in Profile */ a[href="https://discord.com/settings/premium"] {
+        display: none !important;
+    }
+}
+
+
+@container theme-settings style(--nnbs-impl-feature-super-reaction-menu: true) {
+    /* Super Reaction button and Context Menu */
+    [for="burst-reaction-toggle-button"] {
+        display: none !important;
+    }
+}
+
+@container theme-settings style(--nnbs-impl-feature-super-reaction-color: true) {
+    /* Glow */ div[class*="burstGlow_"] {
+        display: none !important;
+    }
+
+    /* all reactions */ .reaction__4a43f {
+        background: var(--background-secondary) !important; 
+    }
+}
+
+@container theme-settings style(--nnbs-impl-feature-terminator: true) {
+    /* Basically everything remaining not in the Settings page */
+    button[class*="shinyButton_"],
+    div[class*="premiumIconWrapper__"],
+    svg[class*="premiumIcon_"],
+    div[class*="upsellDescription_"] > a {
+        display: none !important;
+    }
+}
