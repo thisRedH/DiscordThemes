@@ -6,6 +6,8 @@
 * @source https://github.com/thisRedH/DiscordThemes
 */
 
+@import url(https://this.redh.dev/DiscordThemes/NoNitroBS/src/nnbs.css);
+
 :root {
     --nnbs-mode: normal;
 /*
@@ -17,5 +19,3 @@
     --nnbs-feature-terminator: true;
 */
 }
-
-@import url(https://this.redh.dev/DiscordThemes/NoNitroBS/src/nnbs.css);
