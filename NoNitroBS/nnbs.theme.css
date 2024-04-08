@@ -9,14 +9,13 @@
 @import url(https://this.redh.dev/DiscordThemes/NoNitroBS/src/nnbs.css);
 
 :root {
-    --nnbs-mode: extreme;
-    --nnbs-feature-super-reaction-color: false;
+    --nnbs-mode: normal;
 /*
     --nnbs-feature-dm: true;
     --nnbs-feature-gift: true;
-    --nnbs-feature-profile: true;
+    --nnbs-feature-terminator: true;
     --nnbs-feature-super-reaction-menu: true;
     --nnbs-feature-super-reaction-color: true;
-    --nnbs-feature-terminator: true;
+    --nnbs-feature-badges: true;
 */
 }

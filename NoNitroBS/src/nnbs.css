@@ -14,7 +14,8 @@
         container-name: theme-settings;
         --nnbs-impl-feature-dm: var(--nnbs-feature-dm, true);
         --nnbs-impl-feature-gift: var(--nnbs-feature-gift, true);
-        --nnbs-impl-feature-profile: var(--nnbs-feature-profile, true);
+        --nnbs-impl-feature-badges: var(--nnbs-feature-badges, true);
+        --nnbs-impl-feature-terminator: var(--nnbs-feature-terminator, true);
         --nnbs-impl-feature-super-reaction-menu: var(--nnbs-feature-super-reaction-menu, true);
     }
 }
@@ -24,14 +25,16 @@
         container-name: theme-settings;
         --nnbs-impl-feature-dm: var(--nnbs-feature-dm, true);
         --nnbs-impl-feature-gift: var(--nnbs-feature-gift, true);
-        --nnbs-impl-feature-profile: var(--nnbs-feature-profile, true);
+        --nnbs-impl-feature-terminator: var(--nnbs-feature-terminator, true);
         --nnbs-impl-feature-super-reaction-menu: var(--nnbs-feature-super-reaction-menu, true);
         --nnbs-impl-feature-super-reaction-color: var(--nnbs-feature-super-reaction-color, true);
-        --nnbs-impl-feature-terminator: var(--nnbs-feature-terminator, true);
+        --nnbs-impl-feature-badges: var(--nnbs-feature-badges, true);
     }
 }
 
 /*--- Implementation ---*/
+
+/*lite*/
 
 @container theme-settings style(--nnbs-impl-feature-dm: true) {
     /* Nitro in DMs */ [href="/store"],
@@ -47,9 +50,14 @@
     }
 }
 
-@container theme-settings style(--nnbs-impl-feature-profile: true) {
-    /* Badges in Profile */ a[href="https://discord.com/settings/premium"]
-    /* Icon on Banner */ .premiumIconWrapper__7793e {
+/*normal*/
+
+@container theme-settings style(--nnbs-impl-feature-terminator: true) {
+    /* Basically every remaining get nitro thing not in the Settings page or extreme mode */
+    button[class*="shinyButton_"],
+    div[class*="premiumIconWrapper__"],
+    svg[class*="premiumIcon_"],
+    div[class*="upsellDescription_"] > a {
         display: none !important;
     }
 }
@@ -61,6 +69,8 @@
     }
 }
 
+/*extreme*/
+
 @container theme-settings style(--nnbs-impl-feature-super-reaction-color: true) {
     /* Glow */ div[class*="burstGlow_"] {
         display: none !important;
@@ -71,12 +81,8 @@
     }
 }
 
-@container theme-settings style(--nnbs-impl-feature-terminator: true) {
-    /* Basically everything remaining not in the Settings page */
-    button[class*="shinyButton_"],
-    div[class*="premiumIconWrapper__"],
-    svg[class*="premiumIcon_"],
-    div[class*="upsellDescription_"] > a {
+@container theme-settings style(--nnbs-impl-feature-badges: true) {
+    /* Badges in Profile */ a[href="https://discord.com/settings/premium"] {
         display: none !important;
     }
 }
