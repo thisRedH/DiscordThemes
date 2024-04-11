@@ -57,7 +57,9 @@
     button[class*="shinyButton_"],
     div[class*="premiumIconWrapper__"],
     svg[class*="premiumIcon_"],
-    div[class*="upsellDescription_"] > a {
+    div[class*="upsellDescription_"] > a
+    [class*="premiumPromoDescription_"],
+    [for=fancybutton-toggle] {
         display: none !important;
     }
 }
